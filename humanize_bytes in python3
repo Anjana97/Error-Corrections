@@ -10,8 +10,8 @@ File "/usr/local/lib/python3.5/dist-packages/shodan/client.py", line 16, in
 from .helpers import api_request
 File "/usr/local/lib/python3.5/dist-packages/shodan/helpers.py", line 155
 (1<<50L, 'PB'),
-^
-SyntaxError: invalid syntax
+
+SyntaxError: invalid syntax 
 
 This happen because in python 3 long integer are now parts of int and the L is not need anymore:
 https://docs.python.org/3/whatsnew/3.0.html
